@@ -12,7 +12,7 @@
 <body>
     <main>
         <section id="hero">
-            <header id="hero-header">
+            <header id="hero-header" class="flex-row-v">
                 <p id="header-logo">Pitt Web Dev</p>
                 <ul id="header-list">
                     <li class="header-item">Home</li>
@@ -20,10 +20,10 @@
                     <li class="header-item">Contact Us</li>
                 </ul>
             </header>
-            <div id="hero-main">
+            <div id="hero-main" class="flex-row-v">
                 <div id="hero-sub">
                     <h1 id="hero-title">Our mission</h1>
-                    <p id="hero-text">We aim to provide quality service, meeting all of their needs, in the quickest time-frame.</p>
+                    <p id="hero-text">We aim to provide our clients with quality service, meeting all of their needs, in the quickest time-frame.</p>
                     <button id="hero-button">Connect with us</button>
                 </div>
                 <img src="" alt="hero img alt text" id="hero-image">
@@ -31,31 +31,40 @@
             
         </section>
 
-        <section id="carousel">
+        <section id="carousel" class="flex-row-v">
             <h2 id="carousel-head">Our work</h2>
-            <div class="carousel-card">
-                <img src="" alt="" class="carousel-image">
-                <p class="carousel-text">Image text</p>
+            <div id="card-container" class="flex-row-v">
+                <div class="carousel-card">
+                    <img src="" alt="card image" class="carousel-image">
+                    <p class="carousel-text">Image text</p>
+                </div>
+                <div class="carousel-card">
+                    <img src="" alt="card image" class="carousel-image">
+                    <p class="carousel-text">Image text</p>
+                </div>
+                <div class="carousel-card">
+                    <img src="" alt="card image" class="carousel-image">
+                    <p class="carousel-text">Image text</p>
+                </div>
+                <div class="carousel-card">
+                    <img src="" alt="card image" class="carousel-image">
+                    <p class="carousel-text">Image text</p>
+                </div>
             </div>
-            <div class="carousel-card">
-                <img src="" alt="" class="carousel-image">
-                <p class="carousel-text">Image text</p>
-            </div>
-            <div class="carousel-card">
-                <img src="" alt="" class="carousel-image">
-                <p class="carousel-text">Image text</p>
-            </div>
+           
         </section>
-        <section id="quote">
+        <section id="quote" class="flex-row-v">
             <blockquote id="quote-text">It's our mission to help you reach your mission.</blockquote>
             <p id="quote-credit"><b>- Justin P.</b></p>
         </section>
-        <section id="cta">
-            <div id="cta-container">
-                <h3 id="cta-head">The time to reach your mission is now!</h3>
-                <p id="cta-text">Connect with us to begin your process today.</p>
+        <section id="cta" class="flex-row-v">
+            <div id="cta-wrapper" class="flex-row-v">
+                <div id="cta-container" class="flex-row-v">
+                    <h3 id="cta-head">The time to reach your mission is now!</h3>
+                    <p id="cta-text">Connect with us to begin your process today.</p>
+                </div>
+                <button id="cta-button">Connect with us</button>
             </div>
-            <button id="cta-button">Connect with us</button>
         </section>
     </main>
     <footer>

@@ -9,20 +9,38 @@ html, body {
     font-size: 16px;
 }
 
-#hero, #hero-button, footer {
-    color: #f9faf8;
-}
-
-#hero {
-    background-color: #1f2937;
+/* sizing */
+#hero, #carousel, #quote, #cta {
     height: 384px;
 }
 
+/* color */
+#hero, #hero-button, #cta, #cta-button, footer {
+    color: #f9faf8;
+}
+
+#hero, footer {
+    background-color: #1f2937;
+}
+
+/* buttons */
+#hero-button, #cta-button {
+    width: 128px;
+    height: 36px;
+    border-radius: 0.5em;
+    font-weight: 600;
+    padding: 0.75em;
+}
+
+
 /* hero - navigation */
-#hero-header {
+.flex-row-v {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+}
+
+#hero-header {
+    justify-content: space-around;
 }
 
 #header-logo {
@@ -41,14 +59,15 @@ html, body {
 
 /* hero main content */
 #hero-main {
-    display: flex;
     justify-content: center;
-    align-items: center;
     padding: 4em 0;
 }
 
-#hero-sub {
+#hero-image, #hero-sub {
     width: 30%;
+}
+
+#hero-sub {
     padding-right: 1.25em;
 }
 
@@ -62,17 +81,89 @@ html, body {
     margin: 0 0 0.25em 0;
 }
 
-#hero-button {
-    width: 128px;
-    height: 36px;
+#hero-button {  
     background-color: #3882F6;
     border: none;
-    border-radius: 0.5em;
-    font-weight: 600;
-    padding: 0.75em;
 }
 
+/* carousel content */
+#carousel {
+    flex-direction: column;
+    justify-content: center;
+}
 
-#hero-image {
-    width: 30%;
+#carousel-head {
+    font-size: 2.25em;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+#card-container {
+    width: 60%;
+    justify-content: center;
+    margin-top: 1.5em;
+}
+
+.carousel-card {
+    margin: 0 3em;
+}
+
+/* quote content */
+#quote {
+    background-color: #e5e7eb;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote-text {
+    font-size: 2.25em;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+/* call to action */
+#cta {
+    justify-content: center;
+}
+
+#cta-wrapper {
+    justify-content: space-evenly;
+    width: 60%;
+    height: 50%;
+    background-color: #3882F6;
+    border-radius: 0.5em;
+}
+
+#cta-container {
+    flex-direction: column;
+    align-items: start;
+}
+
+#cta-head {
+    font-size: 1.5em;
+}
+
+#cta-text, #cta-head {
+    margin: 0;
+}
+
+#cta-text {
+    margin-top: 0.25em;
+}
+
+#cta-button {
+    background-color: transparent;
+    border: 1px solid #e5e7eb;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    padding: 32px;
+}
+
+#footer-text {
+    margin: auto;
 }
